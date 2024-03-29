@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/janeilchantelle/node-express-postgres-api/issues"
   },
-  "homepage": "https://github.com/janeilchantelle/node-express-postgres-api#readme"
+  "homepage": "https://github.com/janeilchantelle/node-express-postgres-api#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "method-override": "^3.0.0",
+    "pg": "^8.11.3"
+  }
 }
