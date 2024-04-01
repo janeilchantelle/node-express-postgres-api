@@ -1,0 +1,11 @@
+
+1. As a user, I can see a web page listing all tasks from the database.
+
+2. As a user, I can fetch all tasks from the database via a REST API,
+and the records will be returned as JSON data.
+
+3. As a user, I can add a new task to the database.
+
+4. As a user, I can update an existing task in the database.
+
+5. As a user, I can delete a task from the database.
