@@ -20,13 +20,12 @@ router.get('/new', async (req, res) => {
     res.render('taskForm', { pageTitle: 'Create New Task', formAction: '/tasks' });
 });
 
-// Route to update an existing task (showing a form)
+// Route to display the task edit form
 router.get('/:id/edit', async (req, res) => {
-    const taskId = req.params.id;
-    // Fetch task data based on taskId
     try {
+        const taskId = req.params.id;
         const task = await tasksDAL.getTaskById(taskId);
-        res.render('taskForm', { pageTitle: 'Edit Task', formAction: `/tasks/${taskId}?_method=PUT`, task });
+        res.render('editTask', { pageTitle: 'Edit Task', task });
     } catch (error) {
         console.error('Error fetching task:', error);
         res.status(500).json({ error: 'Internal Server Error' });
