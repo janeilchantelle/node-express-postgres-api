@@ -22,7 +22,6 @@ describe('Tasks API', () => {
     });
 
     it('should update an existing task in the database', async () => {
-        // Assuming taskId is the ID of an existing task in the database
         const taskId = 1;
         const updatedTask = { title: 'Updated Title', description: 'Updated Description', due_date: '2024-04-30', priority: 'Low', category_id: 2 };
         const response = await request(app).put(`/tasks/${taskId}`).send(updatedTask);
@@ -31,10 +30,8 @@ describe('Tasks API', () => {
     });
 
     it('should delete a task from the database', async () => {
-        // Assuming taskId is the ID of an existing task in the database
         const taskId = 1;
         const response = await request(app).delete(`/tasks/${taskId}`);
         expect(response.status).toBe(200);
-        // Check response body if necessary
     });
 });

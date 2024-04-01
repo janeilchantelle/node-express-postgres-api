@@ -2,7 +2,7 @@ const express = require('express');
 const methodOverride = require('method-override');
 const supertest = require('supertest');
 const pool = require('./db');
-const tasksRouter = require('./routes/tasks'); // Import the tasks router
+const tasksRouter = require('./routes/tasks');
 
 const app = express();
 
