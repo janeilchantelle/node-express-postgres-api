@@ -1,11 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-   
+
 }
 
 .container {
-    max-width: 500px; /* Adjust the max-width */
+    max-width: 500px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -61,6 +61,31 @@ h1 {
 }
 
 .create-task {
-    text-align: left; /* Align the text to the left */
-    margin-left: 20px; /* Adjust the margin-left for positioning */
+    text-align: left;
+    margin-left: 20px;
+}
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }

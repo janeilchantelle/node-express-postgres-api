@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= pageTitle %></title>
     <link rel="stylesheet" href="/css/form.css">
-
 </head>
-<body>
-    <h1><%= pageTitle %></h1>
+<body style="background-image: url('/images/bg2.jpg'); background-size: cover;">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/tasks">My List</a></li>
+                <li><a href="/tasks/new">New Task</a></li>
+            </ul>
+        </nav>
+        <h1><%= pageTitle %></h1>
+    </header>
     <form action="<%= formAction %>" method="POST">
         <input type="text" name="title" placeholder="Title" required>
         <textarea name="description" placeholder="Description" required></textarea>

@@ -5,6 +5,8 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-size: cover;
+    background-position: center;
 }
 
 h1 {
@@ -64,21 +66,46 @@ h1 {
 
 .edit-button:hover,
 .delete-button:hover {
-    background-color: #45a049;
+    background-color: #2e903b;
 }
 
 .edit-button {
-    background-color: #007bff;
+    background-color: #2e903b;
 }
 
 .edit-button:hover {
-    background-color: #0056b3;
+    background-color: #1e5e27;
 }
 
 .delete-button {
-    background-color: #dc3545;
+    background-color: #1e5e27;
 }
 
 .delete-button:hover {
-    background-color: #c82333;
+    background-color: #15411b;
+}
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }

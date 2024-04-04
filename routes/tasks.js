@@ -6,7 +6,7 @@ const tasksDAL = require('../dal/tasksDAL');
 router.get('/', async (req, res) => {
     try {
         const tasks = await tasksDAL.getAllTasks();
-        res.render('tasks', { tasks }); // Render tasks.ejs and pass tasks data
+        res.render('tasks', { tasks });
     } catch (error) {
         console.error('Error fetching tasks:', error);
         res.status(500).json({ error: 'Internal Server Error' });
@@ -19,7 +19,7 @@ router.get('/new', async (req, res) => {
 });
 
 // Route to display the task edit form
-router.get('/:id/edit', async (req, res) => {
+router.get('/edit/:id', async (req, res) => {
     try {
         const task_id = req.params.id;
         const task = await tasksDAL.getTaskById(task_id);
@@ -29,6 +29,9 @@ router.get('/:id/edit', async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });
+
+
+
 
 
 // Route to create a new task
