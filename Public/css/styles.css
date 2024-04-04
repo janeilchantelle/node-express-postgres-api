@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: larger;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -12,8 +13,20 @@ header {
     text-align: center;
 }
 
+
 main {
-    padding: 20px;
+    background-image: url('/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 100px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-image {
+    background-image: url('/images/bg.jpg'); /* Adjust the path to your background image */
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -23,12 +36,13 @@ main {
 
 .cta {
     text-align: center;
+    margin-top: -140px; 
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #2e903b;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -36,7 +50,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #1e5e27;
 }
 
 footer {
