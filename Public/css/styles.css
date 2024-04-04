@@ -24,7 +24,7 @@ main {
     align-items: center;
 }
 .background-image {
-    background-image: url('/images/bg.jpg'); /* Adjust the path to your background image */
+    background-image: url('/images/bg.jpg');
     background-size: cover;
     background-position: center;
 }
